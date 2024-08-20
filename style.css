@@ -1,0 +1,170 @@
+/* To Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the app */
+.app-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    color: #333;
+    font-family: 'Zeyada', cursive;
+}
+
+/* Sticky notes container */
+.sticky-notes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Individual sticky note styling */
+.sticky-note {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(4, 4, 4, 0.2);
+    width: 200px;
+    height: 100px;
+    text-align: left;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Delete button styling */
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #fd8f7b;
+    color: #fff;
+    border: none;
+    padding: 2px 4px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.delete-button:hover {
+    background-color: #fb6c52;
+    transform: scale(1.15);
+}
+
+/* Add note button styling */
+.add-note {
+    width: 200px;
+    position: relative;
+    margin: 20px auto;
+}
+
+/* General button styling */
+button {
+    display: inline-block;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Add button specific styling */
+.add-button {
+    color: #08ff2dab;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    font-size: 32px;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.add-button:hover {
+    color: #11ff00bb;
+    transform: scale(1.15);
+    font-weight: 500;
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    height: 100px;
+    overflow: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #ffffc1;
+    border-radius: 6px;
+    border-style: none;
+    border-width: 1px;
+    box-shadow: 2px 2px 5px rgba(4, 4, 4, 0.2);
+    color: #555555;
+    transition: background-color 0.2s ease 0s;
+    position: relative;
+    resize: none;
+}
+
+textarea:focus {
+    outline-width: 0;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    /* Container adjustments */
+    .app-container {
+        padding: 10px;
+    }
+
+    /* Heading adjustments */
+    h1 {
+        font-size: 24px;
+    }
+
+    /* Sticky notes container adjustments */
+    .sticky-notes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Sticky note adjustments */
+    .sticky-note {
+        width: 100%;
+        height: auto;
+        max-width: 300px; /* Prevents notes from becoming too large */
+    }
+
+    /* Add note button adjustments */
+    .add-note {
+        width: 100%;
+    }
+
+    /* Add button adjustments */
+    .add-button {
+        font-size: 28px;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    /* Textarea adjustments */
+    textarea {
+        height: 80px;
+    }
+}
+
+
+
